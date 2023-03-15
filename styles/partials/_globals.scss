@@ -7,14 +7,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Avenir';
+  text-decoration: none;
 }
 
 .nav-bar{
     background-color: $primary-black;
     display: flex;
     flex-direction: column;
-    height: auto;
+    text-align: center;
     width: 100%;
 
     &__image{
@@ -28,14 +28,16 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    flex-direction: row;
+    color: $primary-white;
+    @include subheader;
     }   
 
     &__list-item{ 
     list-style: none;
     text-decoration: none;
+    min-width: 50%;
+    max-width: 50%;
     color: $primary-white
-    
     }
 
 }
@@ -46,4 +48,8 @@
 footer{
     color: $primary-white;
     background-color: $primary-black;
+    @include footer-copy;
+    &__header{
+        @include page-section-header;
+    }
 }

@@ -1,14 +1,15 @@
 @use "./partials/globals" as *;
+@use "./partials/typography" as *;
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
-@use "./partials/typography" as *;
+
 
 .hero {
   background-image: url(/assets/images/hero-bio.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: $primary-black 50%;
+  background-color: rgba(50, 50, 50, 0.5);
   width: 100%;
   height: 18rem;
   text-align: left;
@@ -21,8 +22,8 @@
     display: flex;
     justify-content: baseline;
     vertical-align: middle;
-    font-size: $section-header-text;
     padding: 0 1rem;
+    @include page-section-header;
   }
 }
 
@@ -30,8 +31,8 @@
     margin: 1rem;
 
   &__title {
-    font-size: $section-header-text;
-    padding: 1.5rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
+    @include page-section-header;
   }
 
   &__container{
@@ -43,30 +44,24 @@
   }
 
   &__quote {
-    font-size: $section-header-text;
     padding-top: 1rem;
+    @include subheader;
   }
 }
 
 .article{
     margin: 1rem;
+    @include body-copy;
 
     &__title{
-    font-size: $subheader-text;
     margin: 1rem 0;
+    @include subheader;
     }
 
     &__container{
         margin: 1rem 0;
     }
-
-    &__info{
-        font-size: $body-copy-text;
-    }
 }
-
-
-
 
 .gallery {
   padding: 1rem;
