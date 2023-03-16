@@ -9,6 +9,12 @@
   }
 }
 
+@mixin desktop{
+  @media (min-width: $breakpoint-desktop){
+    @content;
+  }
+}
+
 @mixin page-section-header(){
   font-family: 'avenir';
   font-size: 1.5rem;
@@ -40,6 +46,48 @@
 @mixin labels-buttons(){
   font-family: 'avenir';
   font-size: .625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+
+@mixin tablet-page-header{
+  font-family: 'avenir';
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+  font-weight: 700;
+}
+
+@mixin tablet-section-header{
+  font-family: 'avenir';
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 700;
+}
+
+@mixin tablet-subheader{
+  font-family: 'avenir-demi';
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+@mixin tablet-body-copy{
+  font-family: 'avenir';
+  font-size: .875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+
+@mixin tablet-footer-copy{
+  font-family: 'avenir';
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+@mixin tablet-labels-buttons{
+  font-family: 'avenir-bold';
+  font-size: .75rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
