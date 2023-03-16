@@ -3,11 +3,11 @@
   src: url("/assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: "avenir";
+  font-family: "avenir-bold";
   src: url("/assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
 }
 @font-face {
-  font-family: "avenir";
+  font-family: "avenir-demi";
   src: url("/assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
 }
 *,
@@ -54,19 +54,44 @@
   border-bottom: 2px solid #FFFFFF;
 }
 
-footer {
+.footer {
   color: #FFFFFF;
   background-color: #323232;
+  padding: 1rem;
   font-family: "avenir";
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-weight: 400;
 }
-footer__header {
+.footer__header {
+  padding: 24px 0 16px 0;
   font-family: "avenir";
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+.footer__content-socials-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding-right: 3%;
+}
+.footer__content-managers {
+  margin: 5% 0;
+  border-spacing: 1em;
+}
+.footer__manager-position {
+  margin-bottom: 1rem;
+}
+.footer__address {
+  margin-bottom: 1rem;
+}
+.footer__email {
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+.footer__image {
+  margin: 1.5rem 0 1rem 0;
 }
 
 .hero {
@@ -85,8 +110,6 @@ footer__header {
 .hero__title {
   color: #FFFFFF;
   display: flex;
-  justify-content: baseline;
-  vertical-align: middle;
   padding: 0 1rem;
   font-family: "avenir";
   font-size: 1.5rem;
@@ -135,10 +158,21 @@ footer__header {
 .article__container {
   margin: 1rem 0;
 }
+.article__info {
+  font-weight: 300;
+  font-family: "avenir";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
 
 .gallery {
   padding: 1rem;
   background-color: #FAFAFA;
+  font-family: "avenir";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 .gallery__container {
   max-width: 100%;

@@ -45,11 +45,43 @@
     border-bottom: 2px solid $primary-white;
 }
 
-footer{
+.footer{
     color: $primary-white;
     background-color: $primary-black;
+    padding: 1rem;
     @include footer-copy;
+
     &__header{
+        padding: 24px 0 16px 0;
         @include page-section-header;
     }
+
+    &__content-socials-icons{
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        padding-right: 3%;
+    }
+
+    &__content-managers{
+        margin: 5% 0;
+        border-spacing: 1em;
+    }
+    
+    &__manager-position{
+        margin-bottom: 1rem;
+    }
+    &__address{
+        margin-bottom: 1rem;
+    }
+
+    &__email{
+        color: $primary-white;
+        margin-top: 1rem;
+    }
+
+    &__image{
+        margin: 1.5rem 0 1rem 0;
+    }
+
 }
