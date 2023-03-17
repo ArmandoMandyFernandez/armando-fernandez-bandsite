@@ -9,7 +9,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: #323232 0.50;
   width: 100%;
   height: 18rem;
   text-align: left;
@@ -99,8 +98,8 @@
   background-color: $secondary-white;
   @include page-section-header;
   @include tablet{
-    @include tablet-subheader;
-    margin: 0 4rem;
+    @include tablet-section-header;
+    // margin: 0rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

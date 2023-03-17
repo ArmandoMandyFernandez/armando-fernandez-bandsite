@@ -106,7 +106,11 @@
   margin: 5% 0;
   border-spacing: 1em;
 }
+.footer__manager-name {
+  font-weight: bold;
+}
 .footer__manager-position {
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 .footer__address {
@@ -125,7 +129,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: #323232 0.5;
   width: 100%;
   height: 18rem;
   text-align: left;
@@ -260,11 +263,10 @@
 }
 @media (min-width: 48rem) {
   .gallery {
-    font-family: "avenir-demi";
-    font-size: 1.5rem;
-    line-height: 2rem;
-    font-weight: 600;
-    margin: 0 4rem;
+    font-family: "avenir";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
