@@ -91,7 +91,7 @@
 }
 .footer__header {
   padding: 24px 0 16px 0;
-  font-family: "avenir";
+  font-family: "avenir-demi";
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -140,7 +140,7 @@
   color: #FFFFFF;
   display: flex;
   padding: 0 1rem;
-  font-family: "avenir";
+  font-family: "avenir-demi";
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -159,7 +159,7 @@
 }
 .about__title {
   padding: 1rem 0 1rem 0;
-  font-family: "avenir";
+  font-family: "avenir-demi";
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
@@ -256,7 +256,7 @@
 .gallery {
   padding: 1rem;
   background-color: #FAFAFA;
-  font-family: "avenir";
+  font-family: "avenir-demi";
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
