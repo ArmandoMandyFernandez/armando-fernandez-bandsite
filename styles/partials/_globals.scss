@@ -45,7 +45,7 @@
     color: $primary-white;
     @include subheader;
     @include tablet{
-        vertical-align: middle;
+        
     }
     }   
 
@@ -56,8 +56,10 @@
     max-width: 50%;
     color: $primary-white;
     @include tablet{
-        margin: 1rem 0;
-        padding: 1rem;
+        // margin: 1rem 0;
+        // padding: 1rem;
+        min-width: none;
+        max-width: none;
     }
     }
 
@@ -65,6 +67,7 @@
 
 .active{
     border-bottom: 2px solid $primary-white;
+    font-family: 'avenir-demi';
 }
 
 .footer{
