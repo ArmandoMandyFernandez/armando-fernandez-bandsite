@@ -32,7 +32,9 @@
         padding: 1rem;
         @include tablet{
             max-height: 20rem;
-            max-width: 120rem;
+            max-width: 7.5rem;
+            margin: 16px;
+
         }
     }
 
@@ -42,6 +44,9 @@
     justify-content: space-evenly;
     color: $primary-white;
     @include subheader;
+    @include tablet{
+        vertical-align: middle;
+    }
     }   
 
     &__list-item{ 
@@ -49,7 +54,11 @@
     text-decoration: none;
     min-width: 50%;
     max-width: 50%;
-    color: $primary-white
+    color: $primary-white;
+    @include tablet{
+        margin: 1rem 0;
+        padding: 1rem;
+    }
     }
 
 }

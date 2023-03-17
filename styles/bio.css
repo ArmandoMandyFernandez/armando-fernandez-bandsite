@@ -43,7 +43,8 @@
 @media (min-width: 48rem) {
   .nav-bar__image {
     max-height: 20rem;
-    max-width: 120rem;
+    max-width: 7.5rem;
+    margin: 16px;
   }
 }
 .nav-bar__list {
@@ -56,12 +57,23 @@
   line-height: 1.375rem;
   font-weight: 600;
 }
+@media (min-width: 48rem) {
+  .nav-bar__list {
+    vertical-align: middle;
+  }
+}
 .nav-bar__list-item {
   list-style: none;
   text-decoration: none;
   min-width: 50%;
   max-width: 50%;
   color: #FFFFFF;
+}
+@media (min-width: 48rem) {
+  .nav-bar__list-item {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
 }
 
 .active {
