@@ -100,7 +100,7 @@
   display: flex;
   justify-content: space-between;
   width: 40%;
-  padding-right: 3%;
+  padding: 0 3% 4% 0;
 }
 .footer__content-managers {
   margin: 5% 0;
@@ -121,7 +121,7 @@
   margin-top: 1rem;
 }
 .footer__image {
-  margin: 1.5rem 0 1rem 0;
+  margin: 10% 0 5% 0;
 }
 
 .hero {
@@ -186,10 +186,7 @@
 }
 .about__quote {
   padding-top: 1rem;
-  font-family: "avenir";
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
+  font-family: "avenir-demi";
 }
 @media (min-width: 48rem) {
   .about__quote {
@@ -253,6 +250,10 @@
   }
 }
 
+.paragraph-one {
+  margin: 0 0 1rem 0;
+}
+
 .gallery {
   padding: 1rem;
   background-color: #FAFAFA;
@@ -277,5 +278,5 @@
 }
 .gallery__photo {
   max-width: 100%;
-  margin: 1rem 0;
+  margin: 1% 0;
 }/*# sourceMappingURL=bio.css.map */

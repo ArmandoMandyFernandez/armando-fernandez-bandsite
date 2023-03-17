@@ -52,7 +52,7 @@
 
   &__quote {
     padding-top: 1rem;
-    @include subheader;
+    font-family: 'avenir-demi';
     @include tablet{
       @include tablet-subheader;
       margin: 0 4rem;
@@ -93,6 +93,10 @@
     }
 }
 
+.paragraph-one{
+  margin: 0 0 1rem 0;
+}
+
 .gallery {
   padding: 1rem;
   background-color: $secondary-white;
@@ -111,6 +115,6 @@
 
   &__photo {
     max-width: 100%;
-    margin: 1rem 0;
+    margin: 1% 0;
   }
 }

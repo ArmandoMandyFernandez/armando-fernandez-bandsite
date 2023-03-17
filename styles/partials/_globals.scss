@@ -82,7 +82,7 @@
         display: flex;
         justify-content: space-between;
         width: 40%;
-        padding-right: 3%;
+        padding: 0 3% 4% 0;
     }
 
     &__content-managers{
@@ -107,7 +107,7 @@
     }
 
     &__image{
-        margin: 1.5rem 0 1rem 0;
+        margin: 10% 0 5% 0;
     }
 
 }
