@@ -44,7 +44,7 @@
   .nav-bar__image {
     max-height: 20rem;
     max-width: 7.5rem;
-    margin: 16px;
+    margin: 1rem 2rem;
   }
 }
 .nav-bar__list {
@@ -218,11 +218,17 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
-    margin: 0 4rem;
+    margin: 2rem 4rem;
   }
 }
 .article__container {
   margin: 1rem 0;
+}
+@media (min-width: 48rem) {
+  .article__container {
+    display: flex;
+    margin: 0;
+  }
 }
 .article__info {
   font-weight: 300;

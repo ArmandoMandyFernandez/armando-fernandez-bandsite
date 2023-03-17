@@ -70,12 +70,16 @@
     @include subheader;
     @include tablet{
       @include tablet-subheader;
-      margin: 0 4rem;
+      margin: 2rem 4rem;
     }
     }
 
     &__container{
         margin: 1rem 0;
+        @include tablet{
+          display: flex;
+          margin: 0;
+        }
     }
     &__info{
       font-weight: 300;
