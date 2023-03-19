@@ -10,9 +10,13 @@
   text-decoration: none;
 }
 // HEADER
-
-.nav-bar{
+.header{
     background-color: $primary-black;
+    @include tablet{
+        padding: 2% 0% 0% 2%;
+    }
+}
+.nav-bar{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +25,9 @@
     @include tablet{
         display: flex;
         flex-direction: row;
-        justify-content: left;
+        justify-content: flex-start;
         align-items: left;
-        
+        padding: 0% 3%;
     }
 
     &__image{
@@ -34,7 +38,7 @@
         @include tablet{
             max-height: 20rem;
             max-width: 7.5rem;
-            margin-left: 3%;
+            padding: 10% 0% 20% 0%;
         }
     }
 
@@ -63,7 +67,7 @@
     @include tablet{
         min-width: unset;
         margin-left: 25%;
-        padding: 10% 0;
+        padding: 10% 0% 20% 0%;
     }
     }
 
@@ -82,6 +86,9 @@
     background-color: $primary-black;
     padding: 1rem;
     @include footer-copy;
+    @include tablet{
+        @include tablet-padding-sections; 
+    }
 
     &__content-socials{
         @include tablet{
@@ -95,7 +102,8 @@
         padding: 24px 0 16px 0;
         @include page-section-header;
         @include tablet{
-            @include tablet-section-header
+            @include tablet-section-header;
+            padding: 4% 0% 2% 0%;
         }
     }
 
@@ -121,7 +129,7 @@
         display: none;
         @include tablet{
             display: unset;
-            margin-right: 4%;
+            margin-right: 1%;
         }
     }
     &__managers-container{
@@ -129,13 +137,14 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
     &__content-managers{
         margin: 5% 0;
         border-spacing: 1em;
         @include tablet{
-            margin: 5% 3%;
+            margin: 5% 3% 5% 0%;
         }
     }
     &__manager-name{

@@ -91,3 +91,7 @@
   line-height: 1.25rem;
   font-weight: 700;
 }
+
+@mixin tablet-padding-sections{
+  padding: 3rem 2.25rem 2.25rem 2.25rem;
+}

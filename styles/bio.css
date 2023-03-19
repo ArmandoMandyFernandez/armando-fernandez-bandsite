@@ -19,8 +19,16 @@
   text-decoration: none;
 }
 
-.nav-bar {
+.header {
   background-color: #323232;
+}
+@media (min-width: 48rem) {
+  .header {
+    padding: 2% 0% 0% 2%;
+  }
+}
+
+.nav-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,8 +38,9 @@
   .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     align-items: left;
+    padding: 0% 3%;
   }
 }
 .nav-bar__image {
@@ -44,7 +53,7 @@
   .nav-bar__image {
     max-height: 20rem;
     max-width: 7.5rem;
-    margin-left: 3%;
+    padding: 10% 0% 20% 0%;
   }
 }
 .nav-bar__list {
@@ -76,7 +85,7 @@
   .nav-bar__list-item {
     min-width: unset;
     margin-left: 25%;
-    padding: 10% 0;
+    padding: 10% 0% 20% 0%;
   }
 }
 
@@ -94,6 +103,11 @@
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-weight: 400;
+}
+@media (min-width: 48rem) {
+  .footer {
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
+  }
 }
 @media (min-width: 48rem) {
   .footer__content-socials {
@@ -118,6 +132,7 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
+    padding: 4% 0% 2% 0%;
   }
 }
 .footer__content-socials-icons {
@@ -145,7 +160,7 @@
 @media (min-width: 48rem) {
   .footer__image-2 {
     display: unset;
-    margin-right: 4%;
+    margin-right: 1%;
   }
 }
 @media (min-width: 48rem) {
@@ -153,6 +168,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 .footer__content-managers {
@@ -161,7 +177,7 @@
 }
 @media (min-width: 48rem) {
   .footer__content-managers {
-    margin: 5% 3%;
+    margin: 5% 3% 5% 0%;
   }
 }
 .footer__manager-name {
@@ -199,6 +215,12 @@
   flex-direction: row;
   align-items: center;
 }
+@media (min-width: 48rem) {
+  .hero {
+    padding: 4% 3% 2% 3%;
+    height: 32rem;
+  }
+}
 .hero__title {
   color: #FFFFFF;
   display: flex;
@@ -210,10 +232,11 @@
 }
 @media (min-width: 48rem) {
   .hero__title {
-    font-family: "avenir-demi";
-    font-size: 2.25rem;
-    line-height: 2.75rem;
+    font-family: "avenir";
+    font-size: 3.75rem;
+    line-height: 4.25rem;
     font-weight: 700;
+    font-family: "avenir-demi";
   }
 }
 
@@ -234,6 +257,7 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
+    padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
 .about__container {
@@ -332,10 +356,19 @@
     flex-direction: column;
   }
 }
+@media (min-width: 48rem) {
+  .gallery__title {
+    padding: 4% 3% 2% 3%;
+  }
+}
 .gallery__container {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+}
+@media (min-width: 48rem) {
+  .gallery__container {
+    padding: 2%;
+  }
 }
 .gallery__photo {
   max-width: 100%;

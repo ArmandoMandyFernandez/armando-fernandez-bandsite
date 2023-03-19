@@ -15,6 +15,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  @include tablet{
+    padding: 4% 3% 2% 3%;
+    height: 32rem;
+  }
 
   &__title {
     color: $primary-white;
@@ -22,7 +26,8 @@
     padding: 0 1rem;
     @include page-section-header;
     @include tablet{
-      @include tablet-section-header;
+      @include tablet-page-header;
+      font-family: 'avenir-demi';
     }
   }
 }
@@ -35,7 +40,8 @@
     @include page-section-header;
     @include tablet {
       padding: 3rem 0 2.25rem 0;
-      @include tablet-section-header
+      @include tablet-section-header;
+      @include tablet-padding-sections;
     }
   }
 
@@ -105,10 +111,18 @@
     flex-direction: column;
   }
 
+  &__title{
+    @include tablet{
+      padding: 4% 3% 2% 3%;
+    }
+  }
+
   &__container{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    @include tablet{
+      padding: 2%;
+    }
   }
 
   &__photo {
