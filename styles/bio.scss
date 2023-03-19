@@ -22,7 +22,7 @@
     padding: 0 1rem;
     @include page-section-header;
     @include tablet{
-      @include tablet-section-header
+      @include tablet-section-header;
     }
   }
 }
@@ -69,7 +69,7 @@
     @include subheader;
     @include tablet{
       @include tablet-subheader;
-      margin: 2rem 4rem;
+      margin: 7% 5% 5% 7%;
     }
     }
 
@@ -77,7 +77,7 @@
         margin: 1rem 0;
         @include tablet{
           display: flex;
-          margin: 0;
+          margin: 0 7%;
         }
     }
     &__info{
@@ -88,13 +88,9 @@
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 0 4rem;
+        margin: 0 7% 3% 0%;
       }
     }
-}
-
-.paragraph-one{
-  margin: 0 0 1rem 0;
 }
 
 .gallery {

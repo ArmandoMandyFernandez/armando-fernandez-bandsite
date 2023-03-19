@@ -153,7 +153,7 @@
 }
 @media (min-width: 48rem) {
   .hero__title {
-    font-family: "avenir";
+    font-family: "avenir-demi";
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
@@ -173,7 +173,7 @@
 @media (min-width: 48rem) {
   .about__title {
     padding: 3rem 0 2.25rem 0;
-    font-family: "avenir";
+    font-family: "avenir-demi";
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
@@ -224,7 +224,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
-    margin: 2rem 4rem;
+    margin: 7% 5% 5% 7%;
   }
 }
 .article__container {
@@ -233,7 +233,7 @@
 @media (min-width: 48rem) {
   .article__container {
     display: flex;
-    margin: 0;
+    margin: 0 7%;
   }
 }
 .article__info {
@@ -252,12 +252,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 4rem;
+    margin: 0 7% 3% 0%;
   }
-}
-
-.paragraph-one {
-  margin: 0 0 1rem 0;
 }
 
 .gallery {
@@ -270,7 +266,7 @@
 }
 @media (min-width: 48rem) {
   .gallery {
-    font-family: "avenir";
+    font-family: "avenir-demi";
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
