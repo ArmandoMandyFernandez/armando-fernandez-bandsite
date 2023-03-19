@@ -14,7 +14,7 @@
     background-color: $primary-black;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
     width: 100%;
 
     @include tablet{
@@ -41,6 +41,9 @@
     &__list{
     display: flex;
     list-style: none;
+    width: 100%;
+    // align-items: center;
+    text-align: center;
     justify-content: space-evenly;
     color: $primary-white;
     @include subheader;
@@ -50,16 +53,12 @@
     }   
 
     &__list-item{ 
+    min-width: 50%;
     list-style: none;
     text-decoration: none;
-    min-width: 50%;
-    max-width: 50%;
+    padding: 0 0 2% 0;
     color: $primary-white;
     @include tablet{
-        // margin: 1rem 0;
-        // padding: 1rem;
-        min-width: none;
-        max-width: none;
     }
     }
 
@@ -67,6 +66,7 @@
 
 .active{
     border-bottom: 2px solid $primary-white;
+    width: 100%;
     font-family: 'avenir-demi';
 }
 

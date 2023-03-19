@@ -23,7 +23,7 @@
   background-color: #323232;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   width: 100%;
 }
 @media (min-width: 48rem) {
@@ -50,6 +50,8 @@
 .nav-bar__list {
   display: flex;
   list-style: none;
+  width: 100%;
+  text-align: center;
   justify-content: space-evenly;
   color: #FFFFFF;
   font-family: "avenir";
@@ -58,21 +60,15 @@
   font-weight: 600;
 }
 .nav-bar__list-item {
+  min-width: 50%;
   list-style: none;
   text-decoration: none;
-  min-width: 50%;
-  max-width: 50%;
+  padding: 0 0 2% 0;
   color: #FFFFFF;
 }
-@media (min-width: 48rem) {
-  .nav-bar__list-item {
-    min-width: none;
-    max-width: none;
-  }
-}
-
 .active {
   border-bottom: 2px solid #FFFFFF;
+  width: 100%;
   font-family: "avenir-demi";
 }
 
