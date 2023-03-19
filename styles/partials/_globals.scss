@@ -33,8 +33,7 @@
         @include tablet{
             max-height: 20rem;
             max-width: 7.5rem;
-            margin: 1rem 2rem;
-
+            margin-left: 3%;
         }
     }
 
@@ -48,7 +47,9 @@
     color: $primary-white;
     @include subheader;
     @include tablet{
-        
+        justify-content: unset;
+        width: unset;
+
     }
     }   
 
@@ -59,6 +60,9 @@
     padding: 0 0 2% 0;
     color: $primary-white;
     @include tablet{
+        min-width: unset;
+        margin-left: 25%;
+        padding: 10% 0;
     }
     }
 
