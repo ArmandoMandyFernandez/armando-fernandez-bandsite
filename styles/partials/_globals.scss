@@ -9,6 +9,7 @@
   padding: 0;
   text-decoration: none;
 }
+// HEADER
 
 .nav-bar{
     background-color: $primary-black;
@@ -74,15 +75,28 @@
     font-family: 'avenir-demi';
 }
 
+// FOOTER
+
 .footer{
     color: $primary-white;
     background-color: $primary-black;
     padding: 1rem;
     @include footer-copy;
 
+    &__content-socials{
+        @include tablet{
+            @include tablet-footer-copy;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__header{
         padding: 24px 0 16px 0;
         @include page-section-header;
+        @include tablet{
+            @include tablet-section-header
+        }
     }
 
     &__content-socials-icons{
@@ -90,11 +104,39 @@
         justify-content: space-between;
         width: 40%;
         padding: 0 3% 4% 0;
+        @include tablet{
+            width: 25%;
+            margin-right: 17%;
+            flex-flow: wrap-reverse;
+            justify-content: space-around;
+        }
+    }
+    &__social-logo{
+        @include tablet{
+            height: 45%;
+        }
     }
 
+    &__image-2{
+        display: none;
+        @include tablet{
+            display: unset;
+            margin-right: 4%;
+        }
+    }
+    &__managers-container{
+        @include tablet{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
     &__content-managers{
         margin: 5% 0;
         border-spacing: 1em;
+        @include tablet{
+            margin: 5% 3%;
+        }
     }
     &__manager-name{
         font-weight: bold;
@@ -115,6 +157,9 @@
 
     &__image{
         margin: 10% 0 5% 0;
+        @include tablet{
+            display: none;
+        }
     }
 
 }

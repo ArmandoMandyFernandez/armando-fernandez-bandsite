@@ -95,6 +95,16 @@
   line-height: 1.125rem;
   font-weight: 400;
 }
+@media (min-width: 48rem) {
+  .footer__content-socials {
+    font-family: "avenir";
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__header {
   padding: 24px 0 16px 0;
   font-family: "avenir-demi";
@@ -102,15 +112,57 @@
   line-height: 2rem;
   font-weight: 700;
 }
+@media (min-width: 48rem) {
+  .footer__header {
+    font-family: "avenir-demi";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
 .footer__content-socials-icons {
   display: flex;
   justify-content: space-between;
   width: 40%;
   padding: 0 3% 4% 0;
 }
+@media (min-width: 48rem) {
+  .footer__content-socials-icons {
+    width: 25%;
+    margin-right: 17%;
+    flex-flow: wrap-reverse;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__social-logo {
+    height: 45%;
+  }
+}
+.footer__image-2 {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .footer__image-2 {
+    display: unset;
+    margin-right: 4%;
+  }
+}
+@media (min-width: 48rem) {
+  .footer__managers-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .footer__content-managers {
   margin: 5% 0;
   border-spacing: 1em;
+}
+@media (min-width: 48rem) {
+  .footer__content-managers {
+    margin: 5% 3%;
+  }
 }
 .footer__manager-name {
   font-weight: bold;
@@ -128,6 +180,11 @@
 }
 .footer__image {
   margin: 10% 0 5% 0;
+}
+@media (min-width: 48rem) {
+  .footer__image {
+    display: none;
+  }
 }
 
 .hero {
