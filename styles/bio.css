@@ -224,7 +224,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
-    margin: 7% 5% 5% 7%;
+    margin: 7% 5% 2% 7%;
   }
 }
 .article__container {
@@ -276,9 +276,17 @@
   }
 }
 .gallery__container {
-  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .gallery__photo {
   max-width: 100%;
-  margin: 1% 0;
+  margin: 2%;
+  width: 96%;
+}
+@media (min-width: 48rem) {
+  .gallery__photo {
+    width: 29%;
+  }
 }/*# sourceMappingURL=bio.css.map */
