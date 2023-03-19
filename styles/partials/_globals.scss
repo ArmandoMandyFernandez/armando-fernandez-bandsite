@@ -52,6 +52,7 @@
     color: $primary-white;
     @include subheader;
     @include tablet{
+        @include tablet-body-copy;
         justify-content: unset;
         width: unset;
 
@@ -66,7 +67,7 @@
     color: $primary-white;
     @include tablet{
         min-width: unset;
-        margin-left: 25%;
+        margin-left: 56%;
         padding: 10% 0% 20% 0%;
     }
     }
@@ -77,6 +78,10 @@
     border-bottom: 2px solid $primary-white;
     width: 100%;
     font-family: 'avenir-demi';
+}
+
+.inactive{
+    color: $secondary-white;
 }
 
 // FOOTER
