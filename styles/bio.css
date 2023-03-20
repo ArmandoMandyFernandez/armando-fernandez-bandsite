@@ -27,6 +27,11 @@
     padding: 2% 0% 0% 2%;
   }
 }
+@media (min-width: 80rem) {
+  .header {
+    padding-left: 10%;
+  }
+}
 
 .nav-bar {
   display: flex;
@@ -114,7 +119,12 @@
 }
 @media (min-width: 48rem) {
   .footer {
-    padding: 3rem 2.25rem 2.25rem 2.25rem;
+    padding: 1rem 2.25rem 2.25rem 2.25rem;
+  }
+}
+@media (min-width: 80rem) {
+  .footer {
+    padding: 3% 10%;
   }
 }
 @media (min-width: 48rem) {
@@ -157,9 +167,17 @@
     justify-content: space-around;
   }
 }
+@media (min-width: 80rem) {
+  .footer__content-socials-icons {
+    justify-content: space-evenly;
+    margin-right: 42%;
+    position: relative;
+    padding: 0% 3% 3% 0%;
+  }
+}
 @media (min-width: 48rem) {
   .footer__social-logo {
-    height: 45%;
+    height: 40%;
   }
 }
 .footer__image-2 {
@@ -179,6 +197,11 @@
     justify-content: space-between;
   }
 }
+@media (min-width: 80rem) {
+  .footer__managers-container {
+    justify-content: unset;
+  }
+}
 .footer__content-managers {
   margin: 5% 0;
   border-spacing: 1em;
@@ -188,11 +211,16 @@
     margin: 5% 3% 5% 0%;
   }
 }
+@media (min-width: 80rem) {
+  .footer__content-managers {
+    margin: 2% 3% 5% 0%;
+  }
+}
 .footer__manager-name {
-  font-weight: bold;
+  font-family: "avenir-demi";
 }
 .footer__manager-position {
-  font-weight: bold;
+  font-family: "avenir-demi";
   margin-bottom: 1rem;
 }
 .footer__address {
@@ -218,9 +246,7 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 18rem;
-  text-align: left;
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 @media (min-width: 48rem) {
@@ -229,10 +255,16 @@
     height: 32rem;
   }
 }
+@media (min-width: 80rem) {
+  .hero {
+    padding-left: 10%;
+  }
+}
 .hero__title {
   color: #FFFFFF;
   display: flex;
   padding: 0 1rem;
+  z-index: 1;
   font-family: "avenir-demi";
   font-size: 1.5rem;
   line-height: 2rem;
@@ -251,6 +283,16 @@
 .about {
   margin: 1rem;
 }
+@media (min-width: 48rem) {
+  .about {
+    padding: 2.25rem;
+  }
+}
+@media (min-width: 80rem) {
+  .about {
+    padding: 0 10%;
+  }
+}
 .about__title {
   padding: 1rem 0 1rem 0;
   font-family: "avenir-demi";
@@ -265,7 +307,6 @@
     font-size: 2.25rem;
     line-height: 2.75rem;
     font-weight: 700;
-    padding: 3rem 2.25rem 2.25rem 2.25rem;
   }
 }
 .about__container {
@@ -273,7 +314,7 @@
 }
 @media (min-width: 48rem) {
   .about__container {
-    margin: 0 4rem;
+    margin: 1% 9%;
   }
 }
 .about__image {
@@ -289,14 +330,13 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 600;
-    margin: 0 4rem;
   }
 }
 @media (min-width: 48rem) {
   .about__quote-author {
     font-family: "avenir-demi";
     font-size: 1rem;
-    margin: 1rem 4rem;
+    margin: 1rem 0;
   }
 }
 
@@ -369,6 +409,12 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 2.25rem 2.25rem 1rem 2.25rem;
+  }
+}
+@media (min-width: 80rem) {
+  .gallery {
+    padding: 0 10%;
   }
 }
 @media (min-width: 48rem) {

@@ -15,6 +15,9 @@
     @include tablet{
         padding: 2% 0% 0% 2%;
     }
+    @include desktop{
+        padding-left: 10%;
+    }
 }
 .nav-bar{
     display: flex;
@@ -92,7 +95,10 @@
     padding: 1rem;
     @include footer-copy;
     @include tablet{
-        @include tablet-padding-sections; 
+        padding: 1rem 2.25rem 2.25rem 2.25rem;
+    }
+    @include desktop{
+        padding: 3% 10%;
     }
 
     &__content-socials{
@@ -123,10 +129,16 @@
             flex-flow: wrap-reverse;
             justify-content: space-around;
         }
+        @include desktop{
+            justify-content: space-evenly;
+            margin-right: 42%;
+            position: relative;
+            padding: 0% 3% 3% 0%;
+        }
     }
     &__social-logo{
         @include tablet{
-            height: 45%;
+            height: 40%;
         }
     }
 
@@ -144,6 +156,9 @@
             flex-wrap: wrap;
             justify-content: space-between;
         }
+        @include desktop{
+            justify-content: unset;
+        }
     }
     &__content-managers{
         margin: 5% 0;
@@ -151,13 +166,16 @@
         @include tablet{
             margin: 5% 3% 5% 0%;
         }
+        @include desktop{
+            margin: 2% 3% 5% 0%;
+        }
     }
     &__manager-name{
-        font-weight: bold;
+        font-family: 'avenir-demi';
     }
     
     &__manager-position{
-        font-weight: bold;
+        font-family: 'avenir-demi';
         margin-bottom: 1rem;
     }
     &__address{
