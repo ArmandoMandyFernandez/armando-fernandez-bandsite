@@ -23,7 +23,7 @@
 }
 
 @mixin subheader(){
-  font-family: 'avenir';
+  font-family: 'avenir-demi';
   font-size: .875rem;
   line-height: 1.375rem;
   font-weight: 600;
@@ -34,6 +34,13 @@
   font-size: .8125rem;
   line-height: 1.125rem;
   font-weight: 400;
+}
+
+@mixin body-copy-bold(){
+  font-family: 'avenir';
+  font-size: .8125rem;
+  line-height: 1.125rem;
+  font-weight: 800;
 }
 
 @mixin footer-copy(){
