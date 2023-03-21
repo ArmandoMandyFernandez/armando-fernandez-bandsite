@@ -486,4 +486,32 @@
   .gallery__photo {
     padding: 0;
   }
+}
+
+.comments {
+  font-family: "avenir-demi";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+@media (min-width: 48rem) {
+  .comments {
+    font-family: "avenir-demi";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
+.comments__title {
+  padding: 1.5rem 0 1rem 0;
+}
+.comments__container {
+  display: flex;
+  padding: 1%;
+}
+.comments__image-photo {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=bio.css.map */

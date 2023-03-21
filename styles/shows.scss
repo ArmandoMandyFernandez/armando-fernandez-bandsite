@@ -10,19 +10,24 @@
   background-repeat: no-repeat;
   height: 18rem;
   max-height: 18rem;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: row;
   @include tablet {
     max-height: 32rem;
     height: 32rem;
   }
 
+  &__container{
+    display: flex;
+    flex-direction: column;
+  }
   &__title {
     color: $primary-white;
-    // position: relative;
-    // top: 50%;
+    position: relative;
+    top: 45%;
     padding: 0 1rem;
-    z-index: 3;
+    z-index: 1;
     @include page-section-header;
     @include tablet {
       @include tablet-page-header;
@@ -44,6 +49,15 @@
   &__album-name{
     @include subheader;
     color: $primary-white;
-    z-index: 3;
+    position: relative;
+    padding: 0 1rem;
+    top: 45%;
+    z-index: 1;
   }
+
+  &__song{
+    position: relative;
+    z-index: 1;
+  }
+  
 }

@@ -21,7 +21,9 @@
           <li class="nav-bar__list-item active">
             <a href="/index.html">Biography</a>
           </li>
-          <li class="nav-bar__list-item inactive"><a href="/pages/shows.html">Shows</a></li>
+          <li class="nav-bar__list-item inactive">
+            <a href="/pages/shows.html">Shows</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -29,7 +31,7 @@
     <!-- hero -->
     <section class="hero">
       <div class="hero__overlay"></div>
-        <h1 class="hero__title">The Bees Knees</h1>
+      <h1 class="hero__title">The Bees Knees</h1>
     </section>
 
     <!-- about section -->
@@ -132,15 +134,35 @@
     <section class="comments">
       <h2 class="comments__title">Join the Conversation</h2>
       <div class="comments__container">
-        <form action="" class="comment__form">
-          <label for="NAME">Enter your name</label>
-          <input type="text" name="name" required>
-          <label for="COMMENT">Add a new comment</label>
-          <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
-          <button type="submit">COMMENT</button>
-        </form>
+        <div class="comments__image-container">
+          <img
+            src="/assets/images/Mohan-muruge.jpg"
+            alt=""
+            class="comments__image-photo"
+          />
+        </div>
+        <div class="comments__container-form">
+          <form action="" class="comments__form">
+            <label for="NAME">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="COMMENT">Commentt</label>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Add a new comment"
+              required
+            ></textarea>
+            <button type="submit">COMMENT</button>
+          </form>
+        </div>
       </div>
-
     </section>
 
     <!-- footer -->

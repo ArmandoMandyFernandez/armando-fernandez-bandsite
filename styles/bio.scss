@@ -176,3 +176,30 @@
     }
   }
 }
+
+.comments{
+@include page-section-header;
+padding: 1rem;
+
+@include tablet{
+  @include tablet-section-header
+}
+
+&__title{
+  padding: 1.5rem 0 1rem 0;
+}
+&__container{
+  display: flex;
+  padding: 1%;
+}
+
+&__image-photo{
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+
+}
+
+
+
+}
