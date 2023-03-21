@@ -2,3 +2,33 @@
 @use "./partials/typography" as *;
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
+
+.hero{
+    background-image: url(/assets/images/hero-shows.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18rem;
+    max-height: 18rem;
+    width: 100%;
+    color: $primary-white;
+    padding: 1rem;
+
+    
+    @include tablet{
+      padding: 4% 3% 2% 3%;
+      max-height: 32rem;
+      height: 32rem;
+    }
+    @include desktop{
+      padding-left: 10%;
+    }
+
+    &__album-name{
+        @include subheader;
+    }
+
+    &__artist-name{
+        @include page-section-header;
+    }
+}

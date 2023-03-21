@@ -244,4 +244,40 @@
   .footer__image {
     display: none;
   }
+}
+
+.hero {
+  background-image: url(/assets/images/hero-shows.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 18rem;
+  max-height: 18rem;
+  width: 100%;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+@media (min-width: 48rem) {
+  .hero {
+    padding: 4% 3% 2% 3%;
+    max-height: 32rem;
+    height: 32rem;
+  }
+}
+@media (min-width: 80rem) {
+  .hero {
+    padding-left: 10%;
+  }
+}
+.hero__album-name {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+.hero__artist-name {
+  font-family: "avenir-demi";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }/*# sourceMappingURL=shows.css.map */
