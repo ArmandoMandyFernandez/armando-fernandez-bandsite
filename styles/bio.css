@@ -247,10 +247,9 @@
 }
 
 .hero {
-  background-image: url(/assets/images/hero-bio.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #323232;
+  opacity: 50%;
+  position: relative;
   width: 100%;
   height: 18rem;
   max-height: 18rem;
@@ -259,7 +258,6 @@
 }
 @media (min-width: 48rem) {
   .hero {
-    padding: 4% 3% 2% 3%;
     max-height: 32rem;
     height: 32rem;
   }
@@ -269,9 +267,19 @@
     padding-left: 10%;
   }
 }
+.hero__image {
+  background-image: url(/assets/images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
 .hero__title {
   color: #FFFFFF;
   display: flex;
+  position: relative;
+  top: 50%;
   padding: 0 1rem;
   z-index: 1;
   font-family: "avenir-demi";
@@ -286,26 +294,6 @@
     line-height: 4.25rem;
     font-weight: 700;
     font-family: "avenir-demi";
-  }
-}
-.hero__title-overlay {
-  background-color: #323232;
-  opacity: 50%;
-  position: absolute;
-  top: 9.5%;
-  left: 0%;
-  width: 100%;
-  height: 18rem;
-}
-@media (min-width: 48rem) {
-  .hero__title-overlay {
-    height: 32rem;
-    top: 8.45%;
-  }
-}
-@media (min-width: 80rem) {
-  .hero__title-overlay {
-    top: 5.75%;
   }
 }
 

@@ -269,6 +269,13 @@
     padding-left: 10%;
   }
 }
+.hero__overlay {
+  display: flex;
+  background-color: #323232;
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+}
 .hero__album-name {
   font-family: "avenir-demi";
   font-size: 0.875rem;

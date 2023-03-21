@@ -24,6 +24,14 @@
       padding-left: 10%;
     }
 
+    &__overlay{
+      display: flex;
+      background-color: $primary-black;
+      opacity: 50%;
+      height: 100%;
+      width: 100%;
+    }
+
     &__album-name{
         @include subheader;
     }
