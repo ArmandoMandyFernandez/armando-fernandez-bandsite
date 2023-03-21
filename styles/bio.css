@@ -247,10 +247,10 @@
 }
 
 .hero {
-  background-color: #323232;
-  opacity: 50%;
-  position: relative;
-  width: 100%;
+  background-image: url(/assets/images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 18rem;
   max-height: 18rem;
   display: flex;
@@ -262,16 +262,10 @@
     height: 32rem;
   }
 }
-@media (min-width: 80rem) {
-  .hero {
-    padding-left: 10%;
-  }
-}
 .hero__image {
-  background-image: url(/assets/images/hero-bio.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #323232;
+  opacity: 50%;
+  position: relative;
   height: 100%;
   width: 100%;
 }

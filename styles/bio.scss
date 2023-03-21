@@ -4,14 +4,11 @@
 @use "./partials/variables" as *;
 
 
-
-
-
 .hero{
-  background-color: $primary-black;
-  opacity: 50%;
-  position:relative;
-  width: 100%;
+  background-image: url(/assets/images/hero-bio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 18rem;
   max-height: 18rem;
   display: flex;
@@ -20,15 +17,11 @@
     max-height: 32rem;
     height: 32rem;
   }
-  @include desktop{
-    padding-left: 10%;
-  }
   
   &__image{
-    background-image: url(/assets/images/hero-bio.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: $primary-black;
+    opacity: 50%;
+    position:relative;
     height: 100%;
     width: 100%;
   }
@@ -46,52 +39,6 @@
     }
 }
 }
-// .hero {
-//   background-image: url(/assets/images/hero-bio.jpg);
-//   background-position: center;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   height: 18rem;
-//   max-height: 18rem;
-//   display: flex;
-//   align-items: center;
-//   @include tablet{
-//     padding: 4% 3% 2% 3%;
-//     max-height: 32rem;
-//     height: 32rem;
-//   }
-//   @include desktop{
-//     padding-left: 10%;
-//   }
-
-//   &__title {
-//     color: $primary-white;
-//     display: flex;
-//     padding: 0 1rem;
-//     z-index: 1;
-//     @include page-section-header;
-//     @include tablet{
-//       @include tablet-page-header;
-//       font-family: 'avenir-demi';
-//     }
-//   }
-
-//   &__overlay{
-//     background-color: $primary-black;
-//     opacity: 50%;
-//     position: relative;
-//     width: 100%;
-//     height: 100%;
-//     @include tablet{
-//       height: 32rem;
-//       top: 8.45%
-//     }
-//     @include desktop{
-//       top: 5.75%
-//     }
-//   }
-// }
 
 .about {
     margin: 1rem;
