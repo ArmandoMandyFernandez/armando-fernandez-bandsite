@@ -514,4 +514,33 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
+}
+.comments__container-form {
+  padding: 0.75rem;
+}
+.comments__name-label {
+  font-family: "avenir";
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.comments__comment-label {
+  font-family: "avenir";
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+}
+.comments__button {
+  color: #FFFFFF;
+  background-color: #323232;
+  height: 2.5rem;
+  max-height: 2.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+@media (min-width: 48rem) {
+  .comments__button {
+    min-width: 9.375rem;
+    padding: 2rem;
+  }
 }/*# sourceMappingURL=bio.css.map */

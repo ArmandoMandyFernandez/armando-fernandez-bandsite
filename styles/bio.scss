@@ -197,9 +197,29 @@ padding: 1rem;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-
 }
 
-
+&__container-form{
+  padding: .75rem
+}
+&__name-label{
+  @include labels-buttons;
+}
+&__comment-label{
+  @include labels-buttons;
+}
+&__button{
+  color: $primary-white;
+  background-color: $primary-black;
+  height: 2.5rem;
+  max-height: 2.5rem;
+  width: 100%;
+  border-radius: .25rem;
+  
+  @include tablet{
+    min-width: 9.375rem;
+    padding: 2rem;
+  }
+}
 
 }
