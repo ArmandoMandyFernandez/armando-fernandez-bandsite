@@ -105,40 +105,40 @@ Queen of Yellow x For The Stings
 Venue \
 Location
 
-Mon Sept 06 2021 
+<!-- Mon Sept 06 2021 
 
 Ronald Lane 
 
-San Francisco, CA
+San Francisco, CA -->
 
-Tue Sept 21 2021 
+<!-- Tue Sept 21 2021 
 
 Pier 3 East 
 
-San Francisco, CA 
+San Francisco, CA  -->
 
-Fri Oct 15 2021 
+<!-- Fri Oct 15 2021 
 
 View Lounge 
 
-San Francisco, CA 
+San Francisco, CA  -->
 
-Sat Nov 06 2021 
+<!-- Sat Nov 06 2021 
 
 Hyatt Agency 
 
-San Francisco, CA 
+San Francisco, CA  -->
 
-Fri Nov 26 2021
+<!-- Fri Nov 26 2021
 
 Moscow Center 
 
-San Francisco, CA 
+San Francisco, CA  -->
 
-Wed Dec 15 2021 
+<!-- Wed Dec 15 2021 
 
 Press Club 
 
-San Francisco, CA
+San Francisco, CA -->
 
 Buy Tickets
