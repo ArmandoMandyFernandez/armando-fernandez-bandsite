@@ -1,8 +1,11 @@
+console.log('hello');
+
 let contentEl = document.querySelector(".shows");
-let titleEl = document.createElement("h2");
-titleEl.innerText = 'Shows';
-contentEl.appendChild('titleEl')
-titleEl.classList.add('show__title');
+let heading = document.createElement("h2");
+heading.innerText = 'Shows';
+contentEl.appendChild(heading)
+// console.log(contentEl);
+headingEl.classList.add('show__title');
 
 // const heading = document.createElement("h2");
 // heading.innerHTML = "Shows";
