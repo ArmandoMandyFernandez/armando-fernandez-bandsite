@@ -17,6 +17,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: avenir, Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -312,4 +313,15 @@
 .hero__song {
   position: relative;
   z-index: 1;
+}
+
+.shows {
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+.shows__title {
+  font-family: "avenir-demi";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  font-weight: 800;
 }/*# sourceMappingURL=shows.css.map */

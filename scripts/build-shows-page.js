@@ -1,16 +1,32 @@
 console.log('hello');
 
-let contentEl = document.querySelector(".shows");
-let heading = document.createElement("h2");
+const sectionEl = document.createElement('section');
+sectionEl.className = 'shows'
+document.querySelector('.hero').after(sectionEl);
+
+const heading = document.createElement('h2');
 heading.innerText = 'Shows';
-contentEl.appendChild(heading)
-// console.log(contentEl);
-headingEl.classList.add('show__title');
+heading.className = 'shows__title'
+sectionEl.appendChild(heading);
 
-// const heading = document.createElement("h2");
-// heading.innerHTML = "Shows";
 
-// const showsSection = document.querySelector("#shows-section");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // const shows = [

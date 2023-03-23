@@ -61,3 +61,13 @@
   }
   
 }
+
+.shows{
+  padding: 1.5rem 1rem 1rem 1rem;
+  
+  &__title{
+    @include page-section-header;
+    font-weight: 800;
+  }
+}
+  
