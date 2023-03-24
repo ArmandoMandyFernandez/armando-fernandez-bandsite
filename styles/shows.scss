@@ -65,6 +65,9 @@
 .shows{
   padding: 1.5rem 1rem 1rem 1rem;
   
+  &__container{
+    padding: 1rem 0 1rem 0;
+  }
   &__title{
     @include page-section-header;
     font-weight: 800;

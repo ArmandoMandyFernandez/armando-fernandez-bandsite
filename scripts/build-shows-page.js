@@ -1,8 +1,5 @@
 console.log('hello');
 
-
-
-
 const shows = [
     {
         date: 'Mon Sept 06, 2021',
@@ -34,9 +31,8 @@ const shows = [
         venue: 'Press Club',
         location: 'San Francisco, CA',
     },
-    
-]
-//adding the shows sectin after the hero
+];
+
 const showsSection = createShows(shows);
 document.querySelector('.hero').after(showsSection);
 
@@ -48,7 +44,7 @@ function createShows(shows){
     //creating the heading 'Shows'
     const heading = document.createElement('h2');
     heading.innerText = 'Shows';
-    heading.className = 'shows__title'
+    heading.className = 'shows__title';
     section.appendChild(heading);
 
     // creating the div container for all the data
@@ -62,41 +58,51 @@ function createShows(shows){
         const dataContainer = document.createElement('div');
         dataContainer.className = 'shows__data';
 
-        //the shows date which should show up  first
-        const date = document.createElement('h3');
+        //shows date which should show up first
+        const dateLabel = document.createElement('p');
+        dateLabel.className = 'shows__label';
+        dateLabel.innerText = 'DATE';
+        dataContainer.appendChild(dateLabel);
+
+        const date = document.createElement('p');
         date.className = 'shows__date';
         date.innerText = show.date;
         dataContainer.appendChild(date);
 
         //venue of the show
+        const venueLabel = document.createElement('p');
+        venueLabel.className = 'shows__label';
+        venueLabel.innerText = 'VENUE';
+        dataContainer.appendChild(venueLabel);
+
         const venue = document.createElement('p');
         venue.className = 'shows__venue';
-        venue.textContent = show.venue;
+        venue.innerText = show.venue;
         dataContainer.appendChild(venue);
 
         //shows location
+        const locationLabel = document.createElement('p');
+        locationLabel.className = 'shows__label';
+        locationLabel.innerText = 'LOCATION';
+        dataContainer.appendChild(locationLabel);
+
         const location = document.createElement('p');
         location.className = 'shows__location';
-        location.textContent = show.location;
+        location.innerText = show.location;
         dataContainer.appendChild(location);
-  
+
         //shows button for tickets
         const button = document.createElement('button');
         button.className = 'shows__button';
-        button.textContent = 'BUY TICKETS';
+        button.innerText = 'BUY TICKETS';
         dataContainer.appendChild(button);
 
-        //putting the data container within the container
-        container.appendChild(dataContainer);
-
-        
+        container.appendChild(dataContainer);        
     });
-    //futting the container within the section we created
+
     section.appendChild(container);
     return section;
 }
-
-
 
 
 

@@ -318,6 +318,9 @@
 .shows {
   padding: 1.5rem 1rem 1rem 1rem;
 }
+.shows__container {
+  padding: 1rem 0 1rem 0;
+}
 .shows__title {
   font-family: "avenir-demi";
   font-size: 1.5rem;
