@@ -104,20 +104,4 @@ function createShows(shows){
     return section;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Thank you ceci
