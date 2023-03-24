@@ -8,8 +8,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 18rem;
-  max-height: 18rem;
+  height: 20rem;
+  max-height: 20rem;
   // display: flex;
   // align-items: center;
   // flex-direction: row;
@@ -21,6 +21,32 @@
   &__container{
     display: flex;
     flex-direction: column;
+    padding: 1rem 0;
+    @include tablet{
+      flex-direction: column;
+    }
+    @include desktop{
+      padding: 3rem 7rem;
+      flex-direction: row;
+    }
+  }
+
+  &__container-info{
+    padding: 1rem 0;
+    @include tablet{
+      padding: 2rem 1rem;
+    }
+    @include desktop{
+      width: 50%;
+    }
+  }
+
+  &__container-song{
+    @include desktop{
+      width: 50%;
+      display:flex;
+      justify-content: center;
+    }
   }
   &__title {
     color: $primary-white;
@@ -53,29 +79,97 @@
     padding: 0 1rem;
     top: 45%;
     z-index: 1;
+    @include tablet{
+      @include tablet-subheader;
+    }
   }
 
   &__song{
+    padding: 1rem;
     position: relative;
     z-index: 1;
+    @include tablet{
+      width: 50%;
+      padding-left: 2rem;
+    }
+    @include desktop{
+      width: 90%;
+      top: 50%;
+      display: flex;
+      justify-content: center;
+    }
   }
   
 }
 
 .shows{
   padding: 1.5rem 1rem 1rem 1rem;
+  @include desktop{
+    display: flex;
+    padding: 2rem 3rem;
+  }
   
   &__container{
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
+    @include desktop{
+      padding: 2rem 3rem;
+      position: relative;
+      left: 5%;
+      width: 80%;
+    }
+
   }
   &__title{
     @include page-section-header;
     font-weight: 800;
+    @include desktop{
+      padding: 2rem 3rem;
+    }
   }
 
   &__data{
+  border-bottom: solid 1px $secondary-silver;
+  padding: 1rem 0 1rem 0;
+  line-height: 2rem;
+  @include tablet{
+    display: flex;
+    justify-content: space-between;
     
   }
+  }
+
+  &__label{
+    @include labels-buttons;
+    color: $primary-silver;
+    @include tablet{
+        display: none;
+    }
+  }
+
+  &__date{
+    font-weight: 800;
+  }
+
+  &__location{
+    padding-bottom: 1rem;
+  }
+
+
+  &__button{
+  color: $primary-white;
+  background-color: $primary-black;
+  height: 2.5rem;
+  max-height: 2.5rem;
+  width: 100%;
+  border-radius: .25rem;
+  font-family: 'avenir-demi';
+
+  @include tablet{
+    max-width: 9.375rem;
+  }
+  }
+
+  
 }
 
   
