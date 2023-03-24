@@ -1,62 +1,103 @@
 console.log('hello');
 
-const sectionEl = document.createElement('section');
-sectionEl.className = 'shows'
-document.querySelector('.hero').after(sectionEl);
-
-const heading = document.createElement('h2');
-heading.innerText = 'Shows';
-heading.className = 'shows__title'
-sectionEl.appendChild(heading);
-
-const container = document.createElement('div');
-container.className = 'shows__container'
-sectionEl.appendChild(container);
 
 
 
 const shows = [
     {
-        Date: 'Mon Sept 06, 2021',
-        Venue: 'Ronald Lane',
-        Location: 'San Francisco, CA',
+        date: 'Mon Sept 06, 2021',
+        venue: 'Ronald Lane',
+        location: 'San Francisco, CA',
     },
     {
-        Date: 'Tue Sept 21, 2021',
-        Venue: 'Pier 3 East',
-        Location: 'San Francisco, CA',
+        date: 'Tue Sept 21, 2021',
+        venue: 'Pier 3 East',
+        location: 'San Francisco, CA',
     },
     {
-        Date: 'Fri Oct 15, 2021',
-        Venue: 'View Lounge',
-        Location: 'San Francisco, CA',
+        date: 'Fri Oct 15, 2021',
+        venue: 'View Lounge',
+        location: 'San Francisco, CA',
     },
     {
-        Date: 'Sat Nov 06, 2021',
-        Venue: 'Hyatt Agency',
-        Location: 'San Francisco, CA',
+        date: 'Sat Nov 06, 2021',
+        venue: 'Hyatt Agency',
+        location: 'San Francisco, CA',
     },
     {
-        Date: 'Fri Nov 26, 2021',
-        Venue: 'Moscow Center',
-        Location: 'San Francisco, CA',
+        date: 'Fri Nov 26, 2021',
+        venue: 'Moscow Center',
+        location: 'San Francisco, CA',
     },
     {
-        Date: 'Wed Dec 15 2021',
-        Venue: 'Press Clubt',
-        Location: 'San Francisco, CA',
+        date: 'Wed Dec 15 2021',
+        venue: 'Press Club',
+        location: 'San Francisco, CA',
     },
-
+    
 ]
+//adding the shows sectin after the hero
+const showsSection = createShows(shows);
+document.querySelector('.hero').after(showsSection);
 
+function createShows(shows){
+    //creating shows section
+    const section = document.createElement('section');
+    section.className = ('shows');
 
-for (let i = 0; i < shows.length; i++){
-    let showData = document.createElement('div');
-    showData.innerText = `${shows[i].Date} ${shows[i].Venue} ${shows[i].Location}`;
-    showData.classList.add('shows__data');
-    container.appendChild(showData);
+    //creating the heading 'Shows'
+    const heading = document.createElement('h2');
+    heading.innerText = 'Shows';
+    heading.className = 'shows__title'
+    section.appendChild(heading);
 
+    // creating the div container for all the data
+    const container = document.createElement('div');
+    container.className = 'shows__container';
+
+    //create the for loop to grab all the info
+    shows.forEach(show => {
+        
+        // div container for the show info
+        const dataContainer = document.createElement('div');
+        dataContainer.className = 'shows__data';
+
+        //the shows date which should show up  first
+        const date = document.createElement('h3');
+        date.className = 'shows__date';
+        date.innerText = show.date;
+        dataContainer.appendChild(date);
+
+        //venue of the show
+        const venue = document.createElement('p');
+        venue.className = 'shows__venue';
+        venue.textContent = show.venue;
+        dataContainer.appendChild(venue);
+
+        //shows location
+        const location = document.createElement('p');
+        location.className = 'shows__location';
+        location.textContent = show.location;
+        dataContainer.appendChild(location);
+  
+        //shows button for tickets
+        const button = document.createElement('button');
+        button.className = 'shows__button';
+        button.textContent = 'BUY TICKETS';
+        dataContainer.appendChild(button);
+
+        //putting the data container within the container
+        container.appendChild(dataContainer);
+
+        
+    });
+    //futting the container within the section we created
+    section.appendChild(container);
+    return section;
 }
+
+
+
 
 
 
