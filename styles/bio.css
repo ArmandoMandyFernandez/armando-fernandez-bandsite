@@ -505,11 +505,15 @@
   }
 }
 .comments__title {
+  font-weight: 800;
   padding: 1.5rem 0 1rem 0;
 }
 .comments__container {
   display: flex;
   padding: 1%;
+}
+.comments__image-container {
+  padding: 12% 0;
 }
 .comments__image-photo {
   width: 2.25rem;
@@ -517,19 +521,41 @@
   border-radius: 50%;
 }
 .comments__container-form {
+  color: #AFAFAF;
+  flex-grow: 1;
   padding: 0.75rem;
 }
 .comments__name-label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
   font-family: "avenir";
   font-size: 0.625rem;
   line-height: 1.25rem;
   font-weight: 700;
 }
+.comments__name-label-input {
+  color: #323232;
+  background-color: #FAFAFA;
+  border: solid 2px #E1E1E1;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+}
 .comments__comment-label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.25rem;
   font-family: "avenir";
   font-size: 0.625rem;
   line-height: 1.25rem;
   font-weight: 700;
+}
+.comments__comment-label-input {
+  color: #323232;
+  background-color: #FAFAFA;
+  border: solid 2px #E1E1E1;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
 }
 .comments__button {
   color: #FFFFFF;

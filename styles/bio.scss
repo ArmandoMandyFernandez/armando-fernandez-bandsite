@@ -186,12 +186,17 @@ padding: 1rem;
 }
 
 &__title{
+  font-weight: 800;
   padding: 1.5rem 0 1rem 0;
 }
 &__container{
   display: flex;
   padding: 1%;
 }
+&__image-container{
+  padding: 12% 0;
+}
+
 
 &__image-photo{
   width: 2.25rem;
@@ -200,13 +205,35 @@ padding: 1rem;
 }
 
 &__container-form{
+  color: $primary-silver;
+  flex-grow: 1;
   padding: .75rem
 }
 &__name-label{
+  display: flex;
+  flex-direction: column;
+  padding: .25rem;
   @include labels-buttons;
 }
+&__name-label-input{
+  color: $primary-black;
+  background-color: $secondary-white;
+  border: solid 2px $secondary-silver;
+  border-radius: .25rem;
+  padding: .75rem;
+}
 &__comment-label{
+  display: flex;
+  flex-direction: column;
+  padding: .25rem;
   @include labels-buttons;
+}
+&__comment-label-input{
+  color: $primary-black;
+  background-color: $secondary-white;
+  border: solid 2px $secondary-silver;
+  border-radius: .25rem;
+  padding: .75rem;
 }
 &__button{
   color: $primary-white;

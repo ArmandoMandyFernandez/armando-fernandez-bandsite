@@ -132,7 +132,7 @@
 
     <!-- Comments Section -->
     <section class="comments">
-      <h2 class="comments__title">Join the Conversation</h2>
+      <h3 class="comments__title">Join the Conversation</h3>
       <div class="comments__container">
         <div class="comments__image-container">
           <img
@@ -143,25 +143,14 @@
         </div>
         <div class="comments__container-form">
           <form action="" class="comments__form">
-            <label for="NAME" class="comments__name-label"
+            <label for="name" class="comments__name-label"
               >NAME
-              <input
-                type="text"
-                name="name"
-                placeholder="Enter your name"
-                required
-              />
+              <input type="text" name="name" placeholder="Enter your name" required class="comments__name-label-input"/>
             </label>
-            <label for="COMMENT" class="comments__comment-label"
+            <label for="comment" class="comments__comment-label"
               >COMMENT
-              <textarea
-                name="comment"
-                id="comment"
-                cols="20"
-                rows="5"
-                placeholder="Add a new comment"
-                required
-              ></textarea>
+              <textarea name="comment" id="comment" cols="20" rows="5"
+                placeholder="Add a new comment" class="comments__comment-label-input" required></textarea>
             </label>
             <button type="submit" class="comments__button">COMMENT</button>
           </form>
