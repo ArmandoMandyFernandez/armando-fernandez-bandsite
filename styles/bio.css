@@ -571,6 +571,30 @@
     padding: 2rem;
   }
 }
+.comments__list {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .comments__list {
+    font-family: "avenir-demi";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+}
+.comments__comment-container {
+  padding: 1rem;
+  border-bottom: solid 1px #E1E1E1;
+}
 .comments__comment-header {
   display: flex;
+}
+.comments__comment-name {
+  font-family: "avenir-demi";
+}
+.comments__comment-date {
+  color: #AFAFAF;
 }/*# sourceMappingURL=bio.css.map */

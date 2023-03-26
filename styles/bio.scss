@@ -249,9 +249,31 @@ padding: 1rem;
   }
 }
 
+&__list{
+  @include subheader;
+  @include tablet{
+    @include tablet-subheader;
+  }
+}
+
+&__comment-container{
+  padding: 1rem;
+  border-bottom: solid 1px $secondary-silver;
+}
+
 &__comment-header{
   display: flex;
   
+}
+
+&__comment-name{
+  font-family: 'avenir-demi';
+}
+
+&__comment-date{
+  color: $primary-silver;
+  
+
 }
 
 }
