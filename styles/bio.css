@@ -570,4 +570,7 @@
     min-width: 9.375rem;
     padding: 2rem;
   }
+}
+.comments__comment-header {
+  display: flex;
 }/*# sourceMappingURL=bio.css.map */
