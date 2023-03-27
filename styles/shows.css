@@ -406,11 +406,23 @@
   border-bottom: solid 1px #E1E1E1;
   padding: 1rem 0 1rem 0;
   line-height: 2rem;
+  cursor: pointer;
+}
+.shows__data:hover {
+  background-color: #FAFAFA;
+}
+.shows__data.selected {
+  background-color: #E1E1E1;
 }
 @media (min-width: 48rem) {
   .shows__data {
     display: flex;
     justify-content: space-between;
+  }
+}
+@media (min-width: 80rem) {
+  .shows__data {
+    padding: 1rem;
   }
 }
 .shows__label {

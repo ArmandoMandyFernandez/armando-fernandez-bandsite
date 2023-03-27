@@ -104,4 +104,11 @@ function createShows(shows){
     return section;
 }
 
-//Thank you ceci
+const showDataContainers = document.querySelectorAll('.shows__data');
+
+showDataContainers.forEach(container => {
+  container.addEventListener('click', () => {
+    showDataContainers.forEach(c => c.classList.remove('selected'));
+    container.classList.add('selected');
+  });
+});
