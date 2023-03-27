@@ -281,6 +281,11 @@
     font-family: "avenir-demi";
   }
 }
+@media (min-width: 80rem) {
+  .hero__title {
+    margin-left: 11%;
+  }
+}
 .hero__overlay {
   background-color: #323232;
   position: absolute;
@@ -505,12 +510,36 @@
   }
 }
 .comments__title {
+  font-family: "avenir-demi";
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
   font-weight: 800;
   padding: 1.5rem 0 1rem 0;
+}
+@media (min-width: 48rem) {
+  .comments__title {
+    font-family: "avenir-demi";
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 80rem) {
+  .comments__title {
+    padding: 2rem;
+    margin-left: 8%;
+  }
 }
 .comments__container {
   display: flex;
   padding: 1%;
+}
+@media (min-width: 80rem) {
+  .comments__container {
+    margin: auto;
+    width: 50%;
+  }
 }
 .comments__image-container {
   padding: 12% 0;
@@ -560,15 +589,25 @@
 .comments__button {
   color: #FFFFFF;
   background-color: #323232;
+  width: 100%;
   height: 2.5rem;
   max-height: 2.5rem;
-  width: 100%;
   border-radius: 0.25rem;
+  font-family: "avenir";
+  font-size: 0.625rem;
+  line-height: 1.25rem;
+  font-weight: 700;
 }
 @media (min-width: 48rem) {
   .comments__button {
     min-width: 9.375rem;
-    padding: 2rem;
+    width: 25%;
+    position: relative;
+    left: 74%;
+    font-family: "avenir-bold";
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 700;
   }
 }
 .comments__list {
@@ -589,12 +628,45 @@
   padding: 1rem;
   border-bottom: solid 1px #E1E1E1;
 }
+@media (min-width: 80rem) {
+  .comments__comment-container {
+    width: 50%;
+    margin: auto;
+  }
+}
 .comments__comment-header {
   display: flex;
+  justify-content: space-between;
 }
 .comments__comment-name {
   font-family: "avenir-demi";
+  position: relative;
+  right: 5%;
+}
+@media (min-width: 48rem) {
+  .comments__comment-name {
+    right: 20%;
+  }
+}
+.comments__comment-image {
+  background-color: #E1E1E1;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
 }
 .comments__comment-date {
   color: #AFAFAF;
+}
+.comments__comment-body {
+  margin-left: 20%;
+}
+@media (min-width: 48rem) {
+  .comments__comment-body {
+    margin-left: 15%;
+  }
+}
+@media (min-width: 80rem) {
+  .comments__comment-body {
+    margin-left: 10%;
+  }
 }/*# sourceMappingURL=bio.css.map */
