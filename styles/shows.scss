@@ -10,9 +10,7 @@
   background-repeat: no-repeat;
   height: 20rem;
   max-height: 20rem;
-  // display: flex;
-  // align-items: center;
-  // flex-direction: row;
+  
   @include tablet {
     max-height: 32rem;
     height: 32rem;
