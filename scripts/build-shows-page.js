@@ -1,35 +1,56 @@
-const shows = [
-  {
-    date: "Mon Sept 06 2021",
-    venue: "Ronald Lane",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Tue Sept 21 2021",
-    venue: "Pier 3 East",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Oct 15 2021",
-    venue: "View Lounge",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Sat Nov 06 2021",
-    venue: "Hyatt Agency",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Fri Nov 26 2021",
-    venue: "Moscow Center",
-    location: "San Francisco, CA",
-  },
-  {
-    date: "Wed Dec 15 2021",
-    venue: "Press Club",
-    location: "San Francisco, CA",
-  },
-];
+const baseURL = 'https://project-1-api.herokuapp.com/'
+const APIKey = '844592e2-0f3f-48b8-b6a7-a111bd6d8554';
+
+axios.get(baseURL + 'showdates/?api_key=' + APIKey)
+  .then((response) => {
+    const shows = response.data;
+    const showsSection = createShows(shows);
+    document.querySelector(".hero").after(showsSection);
+
+    const showsCard = document.querySelectorAll(".shows__card");
+    showsCard.forEach((container) => {
+      container.addEventListener("click", () => {
+        showsCard.forEach((c) => c.classList.remove("selected"));
+        container.classList.add("selected");
+      });
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+// const shows = [
+//   {
+//     date: "Mon Sept 06 2021",
+//     venue: "Ronald Lane",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Tue Sept 21 2021",
+//     venue: "Pier 3 East",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Fri Oct 15 2021",
+//     venue: "View Lounge",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Sat Nov 06 2021",
+//     venue: "Hyatt Agency",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Fri Nov 26 2021",
+//     venue: "Moscow Center",
+//     location: "San Francisco, CA",
+//   },
+//   {
+//     date: "Wed Dec 15 2021",
+//     venue: "Press Club",
+//     location: "San Francisco, CA",
+//   },
+// ];
 
 const showsSection = createShows(shows);
 document.querySelector(".hero").after(showsSection);
@@ -97,7 +118,7 @@ function createShows(shows) {
 
     const venue = document.createElement("p");
     venue.className = "shows__venue";
-    venue.innerText = show.venue;
+    venue.innerText = show.place;
     showsCard.appendChild(venue);
 
     const locationLabel = document.createElement("p");
