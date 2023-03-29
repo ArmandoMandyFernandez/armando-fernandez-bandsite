@@ -533,16 +533,23 @@
 }
 .comments__container {
   display: flex;
-  padding: 1%;
+  margin: 1%;
+  border-bottom: solid 1px #E1E1E1;
+}
+@media (min-width: 48rem) {
+  .comments__container {
+    margin: 0 10% 0 10%;
+  }
 }
 @media (min-width: 80rem) {
   .comments__container {
     margin: auto;
     width: 50%;
+    padding-bottom: 1%;
   }
 }
 .comments__image-container {
-  padding: 12% 0;
+  padding: 6% 0;
 }
 .comments__image-photo {
   width: 2.25rem;
@@ -624,49 +631,62 @@
     font-weight: 600;
   }
 }
-.comments__comment-container {
-  padding: 1rem;
+.comments__card {
+  display: flex;
+  margin: 1rem 0 1rem 0;
   border-bottom: solid 1px #E1E1E1;
 }
-@media (min-width: 80rem) {
-  .comments__comment-container {
-    width: 50%;
-    margin: auto;
-  }
-}
-.comments__comment-header {
-  display: flex;
-  justify-content: space-between;
-}
-.comments__comment-name {
-  font-family: "avenir-demi";
-  position: relative;
-  right: 5%;
-}
 @media (min-width: 48rem) {
-  .comments__comment-name {
-    right: 20%;
+  .comments__card {
+    margin: 4% 10% 3% 10%;
   }
 }
-.comments__comment-image {
+@media (min-width: 80rem) {
+  .comments__card {
+    width: 50%;
+    margin: 2% auto 2% auto;
+  }
+}
+.comments__card-image {
   background-color: #E1E1E1;
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-}
-.comments__comment-date {
-  color: #AFAFAF;
-}
-.comments__comment-body {
-  margin-left: 20%;
+  width: 10%;
+  padding: 1rem;
 }
 @media (min-width: 48rem) {
-  .comments__comment-body {
-    margin-left: 15%;
+  .comments__card-image {
+    width: 7%;
   }
 }
-@media (min-width: 80rem) {
-  .comments__comment-body {
-    margin-left: 10%;
+.comments__card-data {
+  font-family: "avenir";
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  width: 90%;
+  padding: 0 1rem 1rem 1rem;
+}
+@media (min-width: 48rem) {
+  .comments__card-data {
+    font-family: "avenir";
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
   }
+}
+.comments__card-name-date-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+.comments__card-name {
+  font-family: "avenir-demi";
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+}
+.comments__card-date {
+  color: #AFAFAF;
 }/*# sourceMappingURL=bio.css.map */
