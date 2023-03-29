@@ -500,6 +500,9 @@
   border-radius: 0.25rem;
   font-family: "avenir-demi";
 }
+.shows__button:hover {
+  background-color: #000;
+}
 @media (min-width: 48rem) {
   .shows__button {
     max-width: 9.375rem;

@@ -264,6 +264,9 @@ padding: 1rem;
   height: 2.5rem;
   max-height: 2.5rem;
   border-radius: .25rem;
+  &:hover {
+    background-color: #000;
+  }
   @include labels-buttons;
   
   @include tablet{

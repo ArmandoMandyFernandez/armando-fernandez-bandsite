@@ -605,6 +605,9 @@
   line-height: 1.25rem;
   font-weight: 700;
 }
+.comments__button:hover {
+  background-color: #000;
+}
 @media (min-width: 48rem) {
   .comments__button {
     min-width: 9.375rem;
