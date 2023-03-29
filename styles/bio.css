@@ -652,14 +652,16 @@
 }
 .comments__card-image {
   background-color: #E1E1E1;
-  width: 2.25rem;
-  height: 2.25rem;
+  max-width: 2.25rem;
+  max-height: 2.25rem;
   border-radius: 50%;
   width: 10%;
   padding: 1rem;
 }
 @media (min-width: 48rem) {
   .comments__card-image {
+    max-width: 3rem;
+    max-height: 3rem;
     width: 7%;
   }
 }
