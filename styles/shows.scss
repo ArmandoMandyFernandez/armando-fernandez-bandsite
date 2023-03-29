@@ -10,39 +10,39 @@
   background-repeat: no-repeat;
   height: 20rem;
   max-height: 20rem;
-  
+
   @include tablet {
     max-height: 32rem;
     height: 32rem;
   }
 
-  &__container{
+  &__container {
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    @include tablet{
+    @include tablet {
       flex-direction: column;
     }
-    @include desktop{
+    @include desktop {
       padding: 3rem 7rem;
       flex-direction: row;
     }
   }
 
-  &__container-info{
+  &__container-info {
     padding: 1rem 0;
-    @include tablet{
+    @include tablet {
       padding: 2rem 1rem;
     }
-    @include desktop{
+    @include desktop {
       width: 50%;
     }
   }
 
-  &__container-song{
-    @include desktop{
+  &__container-song {
+    @include desktop {
       width: 50%;
-      display:flex;
+      display: flex;
       justify-content: center;
     }
   }
@@ -70,114 +70,162 @@
       height: 32rem;
     }
   }
-  &__album-name{
+  &__album-name {
     @include subheader;
     color: $primary-white;
     position: relative;
     padding: 0 1rem;
     top: 45%;
     z-index: 1;
-    @include tablet{
+    @include tablet {
       @include tablet-subheader;
     }
   }
 
-  &__song{
+  &__song {
     padding: 1rem;
     position: relative;
     z-index: 1;
-    @include tablet{
+    @include tablet {
       width: 50%;
       padding-left: 2rem;
     }
-    @include desktop{
+    @include desktop {
       width: 90%;
       top: 50%;
       display: flex;
       justify-content: center;
     }
   }
-  
 }
 
-.shows{
+.shows {
   padding: 1.5rem 1rem 1rem 1rem;
-  @include desktop{
+  @include desktop {
     display: flex;
-    padding: 2rem 3rem;
+    padding: 2rem 7rem;
+    justify-content: flex-start;
   }
-  
-  &__container{
-    padding: 1rem 0;
-    @include desktop{
-      padding: 2rem 3rem;
-      position: relative;
-      left: 5%;
-      width: 80%;
-    }
 
+  &__container-main {
+    @include desktop {
+      margin-left: 6%;
+      padding: 2rem 0;
+      width: 75%;
+    }
   }
-  &__title{
+
+  &__container-header {
+    display: none;
+    @include tablet {
+      color: $primary-silver;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1rem 0 1rem;
+    }
+    @include desktop {
+      padding: 1rem 1rem 0 1rem;
+    }
+  }
+
+  &__container-header-label {
+    @include tablet {
+      width: 25%;
+    }
+    @include desktop {
+    }
+  }
+
+  &__container-data {
+    @include tablet {
+      padding: 0 1rem 1rem 1rem;
+    }
+  }
+  &__title {
     @include page-section-header;
+    padding: 1.5rem 0 1rem 0;
     font-weight: 800;
-    @include desktop{
+    @include tablet {
+      @include tablet-section-header;
+      padding: 1.5rem 0 1rem 1rem;
+    }
+    @include desktop {
       padding: 2rem 3rem;
     }
   }
-  
-  &__data{
+
+  &__card {
     border-bottom: solid 1px $secondary-silver;
     padding: 1rem 0 1rem 0;
     line-height: 2rem;
     cursor: pointer;
-    &:hover{
+    &:hover {
       background-color: $secondary-white;
     }
-    &.selected{
+    &.selected {
       background-color: $secondary-silver;
     }
-    
-    
-    @include tablet{
-    display: flex;
-    justify-content: space-between;
-    
-  }
-  @include desktop{
-    padding: 1rem;
-  }
-  }
 
-  &__label{
-    @include labels-buttons;
-    color: $primary-silver;
-    @include tablet{
-        display: none;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include desktop {
+      padding: 1rem 0 1rem 0;
     }
   }
 
-  &__date{
+  &__label {
+    @include labels-buttons;
+    color: $primary-silver;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__date {
     font-weight: 800;
+    @include tablet {
+      width: 25%;
+    }
   }
 
-  &__location{
+  &__venue {
+    @include tablet {
+      width: 25%;
+    }
+  }
+
+  &__location {
     padding-bottom: 1rem;
+    @include tablet {
+      width: 25%;
+    }
   }
 
+  &__button {
+    color: $primary-white;
+    background-color: $primary-black;
+    height: 2.5rem;
+    max-height: 2.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    font-family: "avenir-demi";
 
-  &__button{
-  color: $primary-white;
-  background-color: $primary-black;
-  height: 2.5rem;
-  max-height: 2.5rem;
-  width: 100%;
-  border-radius: .25rem;
-  font-family: 'avenir-demi';
-
-  @include tablet{
-    max-width: 9.375rem;
+    @include tablet {
+      max-width: 9.375rem;
+    }
   }
+  &__button-hidden {
+    @include tablet {
+      visibility: hidden;
+      max-width: 9.375rem;
+      height: 2.5rem;
+      max-height: 2.5rem;
+      width: 100%;
+      border-radius: 0.25rem;
+      font-family: "avenir-demi";
+    }
   }
 }
-
-  
