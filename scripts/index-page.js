@@ -47,7 +47,7 @@ const displayComment = (comment) =>{
 
   const commentDate = document.createElement('p');
   commentDate.className = 'comments__card-date';
-  commentDate.innerText = comment.timestamp;
+  commentDate.innerText = new Date(comment.timestamp).toLocaleDateString();
   commentDataNameDate.appendChild(commentDate);
 
   const commentReviewContainer = document.createElement ('div');
