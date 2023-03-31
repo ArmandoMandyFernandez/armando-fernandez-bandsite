@@ -1,7 +1,8 @@
-const baseURL = 'https://project-1-api.herokuapp.com/'
-const APIKey = '844592e2-0f3f-48b8-b6a7-a111bd6d8554';
+const baseURL = "https://project-1-api.herokuapp.com/";
+const APIKey = "844592e2-0f3f-48b8-b6a7-a111bd6d8554";
 
-axios.get(baseURL + 'showdates/?api_key=' + APIKey)
+axios
+  .get(baseURL + "showdates/?api_key=" + APIKey)
   .then((response) => {
     const shows = response.data;
     const showsSection = createShows(shows);
@@ -18,7 +19,6 @@ axios.get(baseURL + 'showdates/?api_key=' + APIKey)
   .catch((error) => {
     console.log(error);
   });
-
 
 
 const showsSection = createShows(shows);

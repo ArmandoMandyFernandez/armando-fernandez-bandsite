@@ -240,9 +240,12 @@ padding: 1rem;
 &__name-label-input{
   color: $primary-black;
   background-color: $secondary-white;
-  border: solid 2px $secondary-silver;
+  border: solid 1px $secondary-silver;
   border-radius: .25rem;
   padding: .75rem;
+  &:focus{
+    outline: solid 1px $primary-black;
+  }
 }
 &__comment-label{
   display: flex;
@@ -256,6 +259,10 @@ padding: 1rem;
   border: solid 2px $secondary-silver;
   border-radius: .25rem;
   padding: .75rem;
+  &:focus{
+    outline: solid 1px $primary-black;
+  }
+  
 }
 &__button{
   color: $primary-white;
