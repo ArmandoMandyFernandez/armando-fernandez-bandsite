@@ -3,7 +3,7 @@ const APIKey = "844592e2-0f3f-48b8-b6a7-a111bd6d8554";
 
 const comments = [];
 axios
-  .get(baseURL + "comments/?api_key=" + APIKey)
+  .get(`${baseURL}comments/?api_key=${APIKey}`)
   .then((response) => {
     comments.push(...response.data);
     renderComments(comments);
@@ -84,9 +84,22 @@ const addComment = (event) => {
 
   nameInput.value = "";
   commentInput.value = "";
+  
+  axios
+    .post(`${baseURL}comments/?api_key=${APIKey}`,{
+      name,
+      comment
+    })
+    .then((res)=> {
+      console.log(res.data);
+      renderComments();
+    })
+    .catch(error => console.log(error)); 
 
   renderComments();
+
 };
+
 
 const commentForm = document.querySelector(".comments__form");
 commentForm.addEventListener("submit", addComment);

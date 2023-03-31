@@ -2,7 +2,7 @@ const baseURL = "https://project-1-api.herokuapp.com/";
 const APIKey = "844592e2-0f3f-48b8-b6a7-a111bd6d8554";
 
 axios
-  .get(baseURL + "showdates/?api_key=" + APIKey)
+  .get(`${baseURL}showdates/?api_key=${APIKey}`)
   .then((response) => {
     const shows = response.data;
     const showsSection = createShows(shows);
@@ -11,7 +11,7 @@ axios
     const showsCard = document.querySelectorAll(".shows__card");
     showsCard.forEach((container) => {
       container.addEventListener("click", () => {
-        showsCard.forEach((c) => c.classList.remove("selected"));
+        showsCard.forEach((select) => select.classList.remove("selected"));
         container.classList.add("selected");
       });
     });
@@ -115,7 +115,7 @@ const showsCard = document.querySelectorAll(".shows__card");
 
 showsCard.forEach((container) => {
   container.addEventListener("click", () => {
-    showsCard.forEach((c) => c.classList.remove("selected"));
+    showsCard.forEach((select) => select.classList.remove("selected"));
     container.classList.add("selected");
   });
 });
