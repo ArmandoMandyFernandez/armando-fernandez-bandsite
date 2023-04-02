@@ -615,14 +615,14 @@
   font-weight: 700;
 }
 .comments__button:hover {
-  background-color: #000;
+  background-color: #000000;
 }
 @media (min-width: 48rem) {
   .comments__button {
     min-width: 9.375rem;
     width: 25%;
     position: relative;
-    left: 74%;
+    left: 73%;
     font-family: "avenir-bold";
     font-size: 0.75rem;
     line-height: 1.25rem;

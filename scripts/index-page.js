@@ -13,7 +13,6 @@ axios
     console.log(error);
   });
 
-
 const displayComment = (comment) => {
   const commentList = document.getElementById("comments__list");
 
@@ -41,8 +40,11 @@ const displayComment = (comment) => {
   const commentDate = document.createElement("p");
   commentDate.className = "comments__card-date";
   const dateFormat = { month: "2-digit", day: "2-digit", year: "numeric" };
-  commentDate.innerText = new Date(comment.timestamp).toLocaleDateString("en-US", dateFormat);
-  
+  commentDate.innerText = new Date(comment.timestamp).toLocaleDateString(
+    "en-US",
+    dateFormat
+  );
+
   commentDataNameDate.appendChild(commentDate);
 
   const commentReviewContainer = document.createElement("div");
@@ -61,12 +63,11 @@ const renderComments = () => {
   const commentList = document.getElementById("comments__list");
   commentList.innerText = "";
 
-  comments.sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
+  comments.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
 
-  for (let i=0; i < comments.length; i++){
+  for (let i = 0; i < comments.length; i++) {
     displayComment(comments[i]);
   }
-  
 };
 
 const addComment = (event) => {
@@ -89,23 +90,20 @@ const addComment = (event) => {
 
   nameInput.value = "";
   commentInput.value = "";
-  
+
   axios
-    .post(`${baseURL}comments/?api_key=${APIKey}`,{
+    .post(`${baseURL}comments/?api_key=${APIKey}`, {
       name,
-      comment
+      comment,
     })
-    .then((res)=> {
+    .then((res) => {
       console.log(res.data);
       renderComments();
     })
-    .catch(error => console.log(error)); 
+    .catch((error) => console.log(error));
 
   renderComments();
-
 };
-
-
 
 const commentForm = document.querySelector(".comments__form");
 commentForm.addEventListener("submit", addComment);

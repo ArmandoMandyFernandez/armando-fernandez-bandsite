@@ -20,7 +20,6 @@ axios
     console.log(error);
   });
 
-
 const showsSection = createShows(shows);
 document.querySelector(".hero").after(showsSection);
 
