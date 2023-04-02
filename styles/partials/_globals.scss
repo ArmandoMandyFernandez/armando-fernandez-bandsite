@@ -18,7 +18,7 @@
         padding: 2% 0% 0% 2%;
     }
     @include desktop{
-        padding-left: 10%;
+        padding-left: 3%;
     }
 }
 .nav-bar{
@@ -33,6 +33,10 @@
         justify-content: flex-start;
         align-items: left;
         padding: 0% 3%;
+    }
+
+    @include desktop{
+        padding-left: 7%;
     }
 
     &__image{

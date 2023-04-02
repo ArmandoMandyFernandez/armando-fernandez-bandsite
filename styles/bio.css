@@ -31,7 +31,7 @@
 }
 @media (min-width: 80rem) {
   .header {
-    padding-left: 10%;
+    padding-left: 3%;
   }
 }
 
@@ -48,6 +48,11 @@
     justify-content: flex-start;
     align-items: left;
     padding: 0% 3%;
+  }
+}
+@media (min-width: 80rem) {
+  .nav-bar {
+    padding-left: 7%;
   }
 }
 .nav-bar__image {
@@ -285,7 +290,8 @@
 }
 @media (min-width: 80rem) {
   .hero__title {
-    margin-left: 11%;
+    margin-left: 4%;
+    padding-left: 6%;
   }
 }
 .hero__overlay {
