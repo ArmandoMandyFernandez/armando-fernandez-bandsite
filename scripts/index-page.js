@@ -40,7 +40,9 @@ const displayComment = (comment) => {
 
   const commentDate = document.createElement("p");
   commentDate.className = "comments__card-date";
-  commentDate.innerText = new Date(comment.timestamp).toLocaleDateString();
+  const dateFormat = { month: "2-digit", day: "2-digit", year: "numeric" };
+  commentDate.innerText = new Date(comment.timestamp).toLocaleDateString("en-US", dateFormat);
+  
   commentDataNameDate.appendChild(commentDate);
 
   const commentReviewContainer = document.createElement("div");
@@ -59,9 +61,12 @@ const renderComments = () => {
   const commentList = document.getElementById("comments__list");
   commentList.innerText = "";
 
-  for (let i = comments.length - 1; i >= 0; i--) {
+  comments.sort((a,b) => new Date(a.timestamp) - new Date(b.timestamp));
+
+  for (let i=0; i < comments.length; i++){
     displayComment(comments[i]);
   }
+  
 };
 
 const addComment = (event) => {
@@ -99,6 +104,7 @@ const addComment = (event) => {
   renderComments();
 
 };
+
 
 
 const commentForm = document.querySelector(".comments__form");
